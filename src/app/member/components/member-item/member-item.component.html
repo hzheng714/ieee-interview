@@ -1,0 +1,13 @@
+<ion-item>
+  <ion-avatar slot="start">
+    <img [src]="member.picture.thumbnail">
+  </ion-avatar>
+  <ion-label>
+    <div class="app-member-item__header">
+      <h2 class="ion-text-capitalize">{{member.name.first}} {{member.name.last}}</h2>
+      <ion-badge color="medium" class="app-member-item__registration-age-badge">{{member.registered.age}} yr</ion-badge>
+    </div>
+    <p>Since {{member.registered.date | date:'shortDate'}}</p>
+    <p class="ion-text-capitalize"><ion-icon name="home"></ion-icon> {{member.location.city}}, {{member.location.state}}</p>
+  </ion-label>
+</ion-item>

@@ -1,0 +1,9 @@
+<ion-list>
+    <ng-container *ngFor="let member of members">
+        <app-member-item [member]="member"></app-member-item>
+    </ng-container>
+</ion-list>
+
+<ion-infinite-scroll threshold="20%" (ionInfinite)="load()">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading..."></ion-infinite-scroll-content>
+</ion-infinite-scroll>
