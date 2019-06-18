@@ -1,0 +1,7 @@
+{
+  "name": "ieee-interview",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
