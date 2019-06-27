@@ -3,6 +3,7 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouteReuseStrategy} from '@angular/router';
 import {Camera} from '@ionic-native/camera/ngx';
+import {SecureStorage} from '@ionic-native/secure-storage/ngx';
 import {SplashScreen} from '@ionic-native/splash-screen/ngx';
 import {StatusBar} from '@ionic-native/status-bar/ngx';
 
@@ -19,7 +20,8 @@ import {AppComponent} from './app.component';
         StatusBar,
         SplashScreen,
         {provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
-        Camera
+        Camera,
+        SecureStorage
     ],
     bootstrap: [AppComponent]
 })
