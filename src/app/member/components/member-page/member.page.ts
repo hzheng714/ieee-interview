@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CameraService} from '../../../core/services/camera.service';
 
 @Component({
   selector: 'app-member',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class MemberPage {
 
-  constructor() {}
+  constructor(private cameraService: CameraService) {}
+
+  takePicture() {
+    this.cameraService.takePicture();
+  }
 
 }
